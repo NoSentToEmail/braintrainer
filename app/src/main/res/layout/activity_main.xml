@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintBottom_toTopOf="@+id/textButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_timer" />
+
+    <TextView
+        android:id="@+id/textButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_button1"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textButton"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintBottom_toTopOf="@+id/textButton3"
+        app:layout_constraintEnd_toStartOf="@+id/textButton2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_button3"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textButton"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textButton4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_button2"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textButton"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintBottom_toTopOf="@+id/textButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textButton1" />
+
+    <TextView
+        android:id="@+id/textButton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_button4"
+        android:gravity="center"
+        android:padding="@dimen/padding_inside_textButton"
+        android:text="TextView"
+        android:onClick="onClickAnswer"
+        android:textSize="@dimen/text_size_options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textButton3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
